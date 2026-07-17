@@ -24,7 +24,7 @@ function updateCartUI() {
       <li class="list-group-item d-flex justify-content-between align-items-center lh-sm">
         <div>
           <h6 class="my-0">${item.name}</h6>
-          <small class="text-body-secondary">$${item.price} each</small>
+          <small class="text-body-secondary">Rs${item.price} each</small>
         </div>
         <div class="d-flex align-items-center">
           <button class="btn btn-sm btn-outline-secondary qty-btn" data-index="${index}" data-action="decrease">-</button>
@@ -39,7 +39,7 @@ function updateCartUI() {
   cartList.innerHTML += `
     <li class="list-group-item d-flex justify-content-between">
       <span>Total (USD)</span>
-      <strong>$${total.toFixed(2)}</strong>
+      <strong>Rs${total.toFixed(2)}</strong>
     </li>
   `;
 
